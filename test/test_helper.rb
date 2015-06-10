@@ -7,4 +7,10 @@ class ActiveSupport::TestCase
   fixtures :all
 
   # Add more helper methods to be used by all tests here...
+  def new_product(image_url)
+  	Product.new(title: 'My Book Title', 
+  		          description: 'yyy', 
+  		          price: 1, 
+  		          image_url: image_url)
+  end
 end
