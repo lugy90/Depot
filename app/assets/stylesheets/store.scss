@@ -15,8 +15,9 @@
 	.entry{
 		overflow: auto;
 		margin-top: 1em;
-		border-bottom: 1px dotted #77d;
+		border: 1px dotted #77d;
 		min-height: 100px;
+		padding-top: 6px;
 
 		img{
 			width: 80px;
