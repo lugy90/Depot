@@ -15,3 +15,9 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+// Login alert
+$(".button_to input").click(
+	function(){
+		alert("Please login first.")
+	})

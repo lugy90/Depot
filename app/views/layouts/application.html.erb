@@ -10,6 +10,17 @@
   <div id="banner">
   	<%= image_tag('logo.jpg', height: '40', width: '50', id: 'logo') %>
   	<%= @page_title || 'Pragmatic Bookshelf' %>
+    <% if user_signed_in? %>
+      <ul class='auth'>
+        <li><%= link_to 'Edit',   edit_user_registration_path %></li>
+        <li><%= link_to 'LogOut', destroy_user_session_path, method: :delete %></li>
+      </ul>
+    <% else %>
+      <ul class='auth'>
+        <li><%= link_to 'SignUp',   new_user_registration_path %></li>
+        <li><%= link_to 'LogIn', new_user_session_path %></li>
+      </ul>
+    <% end %>
   </div>
   <div id="columns">
   	<div id="side">
@@ -27,6 +38,7 @@
   			<li><a href="#">Contact</a></li>
   		</ul>
   	</div>
+    
   	<div id="main">
   		<%= yield %>
   	</div>

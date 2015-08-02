@@ -29,8 +29,30 @@
 	  }
 
 	  br {
-	    display: none
+	    display: none;
 	  }   
+  }
+}
+
+// banner auth
+.auth{
+  float: right;
+
+  li{
+  	float: left;
+  	margin-right: 15px;
+
+  	a:link, a:visited{
+  		font-size: 18px;
+  		font-weight: bold;
+  		color: #000;
+  		text-decoration: none;
+  	}
+
+  	a:hover{
+  		color: #fff;
+  		background: none;
+  	}
   }
 }
 
